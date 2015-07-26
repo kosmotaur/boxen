@@ -4,7 +4,7 @@
 # default. This ensures at least the ability to construct a basic
 # environment.
 
-# Shortcut for a module from GitHub's boxen organization
+# Shortcut for a module from GitHub"s boxen organization
 def github(name, *args)
   options ||= if args.last.is_a? Hash
     args.last
@@ -23,7 +23,7 @@ end
 
 # Shortcut for a module under development
 def dev(name, *args)
-  mod "puppet-#{name}", :path => "#{ENV['HOME']}/src/boxen/puppet-#{name}"
+  mod "puppet-#{name}", :path => "#{ENV["HOME"]}/src/boxen/puppet-#{name}"
 end
 
 # Includes many of our custom types and providers, as well as global
@@ -36,7 +36,7 @@ github "boxen", "3.10.4"
 github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 
 # Core modules for a basic development environment. You can replace
-# some/most of these if you want, but it's not recommended.
+# some/most of these if you want, but it"s not recommended.
 
 github "brewcask",    "0.0.6"
 github "dnsmasq",     "2.0.1"
@@ -57,6 +57,9 @@ github "ruby",        "8.5.2"
 github "stdlib",      "4.2.1", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 github "xquartz",     "1.2.1"
+github "chrome",      "1.2.0"
+github "osx",         "2.8.0"
+github "iterm2",      "1.2.5"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
