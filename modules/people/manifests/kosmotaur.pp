@@ -1,8 +1,6 @@
 class people::kosmotaur::apps {
   include chrome
   include chrome::canary
-  include iterm2::stable
-  include iterm2::colors::solarized_dark
   package {"telegram": provider => "brewcask"}
   package {"webstorm": provider => "brewcask"}
   package {"slack": provider => "brewcask"}
